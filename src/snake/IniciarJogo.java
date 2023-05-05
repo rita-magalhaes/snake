@@ -1,0 +1,21 @@
+package snake;
+
+import javax.swing.JFrame;
+
+
+public class IniciarJogo extends JFrame {
+
+    public static void main(String[] args) {
+        new IniciarJogo();
+    }
+
+    IniciarJogo() {
+        add(new Snake());
+        setTitle("Jogo da Cobrinha - Snake game");
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setResizable(false);
+        pack();
+        setVisible(true);
+        setLocationRelativeTo(null);
+    }
+}
